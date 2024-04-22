@@ -4,18 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-            integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-            <link rel="stylesheet" href="./css/main.min.css">
+    <link rel="stylesheet" href="css/main.min.css">
 </head>
 <body>
     
 
 
 <header class="header">
-    <div class="container">
+    <div class=" container">
+        <div class="header__wrap">   
             <div class="header__nav">
+                <a href="index.html">
                 <img src="#" alt="logo" class="header__logo">
+                </a>
                 <nav>
                     <ul class="header__nav-list">
                         <li class="header__nav-item">
@@ -37,88 +38,66 @@
                 <ul class="header__menu-list">
                     <li class="header__menu-item">
                         <a class="header__menu-btn" href="#">
-                            
-                            <svg class="header__menu-icon">
-                                <use href="#"></use>
-                            </svg>
+                            adw
                         </a>
                     </li>
                     <li class="header__menu-item">
-                        <!-- Button trigger modal -->
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                            <svg class="header__menu-icon">
-                                <use href="#"></use>
-                            </svg>
-                        </button>
+                        <button type="button" class="menu__button js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                            open
+                        </button>                        
                         
-                        <!-- Modal -->
-                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-                                    <div class="modal-header">                                        
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <nav>
-                                            <ul class="header__nav-list">
-                                                <li class="header__nav-item">
-                                                    <a class="header__nav-link" href="#">destinations</a>
-                                                </li>
-                                                <li class="header__nav-item">
-                                                    <a class="header__nav-link" href="#">experiences</a>
-                                                </li>
-                                                <li class="header__nav-item">
-                                                    <a class="header__nav-link" href="#">about</a>
-                                                </li>
-                                                <li class="header__nav-item">
-                                                    <a class="header__nav-link" href="#">gallery</a>
-                                                </li>
-                                            </ul>
+                        <div class="menu__container js-menu-container" id="mobile-menu">
+                            <button type="button" class="menu__button menu__button-close  js-close-menu">
+                                close
+                            </button>
+                        
+                            <div class="menu__box">
+                                <div class="mobile__menu">
+                                    <img src="#" alt="logo">
 
-                                            <ul class="mobile__nav-list">
-                                                <li class="mobile__nav-item">
-                                                    <a href="#" class="mobile__nav-link"></a>
-                                                </li>
-                                                <li class="mobile__nav-item">
-                                                    <a href="#" class="mobile__nav-link"></a>
-                                                </li>
-                                                <li class="mobile__nav-item">
-                                                    <a href="#" class="mobile__nav-link"></a>
-                                                </li>
-                                                <li class="mobile__nav-item">
-                                                    <a href="#" class="mobile__nav-link"></a>
-                                                </li>
-                                                <li class="mobile__nav-item">
-                                                    <a href="#" class="mobile__nav-link"></a>
-                                                </li>
-                                                <li class="mobile__nav-item">
-                                                    <a href="#" class="mobile__nav-link"></a>
-                                                </li>
-                                                <li class="mobile__nav-item">
-                                                    <a href="#" class="mobile__nav-link"></a>
-                                                </li>
-                                                <li class="mobile__nav-item">
-                                                    <a href="#" class="mobile__nav-link"></a>
-                                                </li>
-                                            </ul>
-                                        </nav>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>                                        
-                                    </div>
-                                </div>
+                                    <ul class="menu__list">
+                                        <li class="menu__item">
+                                            <a href="#" class="menu__link">
+                                                destinations
+                                            </a>
+                                        </li>
+                                        <li class="menu__item">
+                                            <a href="#" class="menu__link">
+                                                experiences
+                                            </a>
+                                        </li>
+                                        <li class="menu__item">
+                                            <a href="#" class="menu__link">
+                                                about
+                                            </a>
+                                        </li>
+                                        <li class="menu__item">
+                                            <a href="#" class="menu__link">
+                                                gallery
+                                            </a>
+                                        </li>
+                                    </ul>
+
+                                    <ul class="menu__social-networking">
+                                        <li class="menu__social-card"><a target="_blank" href="https://www.youtube.com/" class="menu__social-link">YouTube</a></li>
+                                        <li class="menu__social-card"><a target="_blank" href="https://www.facebook.com/" class="menu__social-link">Facebook</a></li>
+                                        <li class="menu__social-card"><a target="_blank" href="https://www.instagram.com/" class="menu__social-link">Instagram</a></li>
+                                        <li class="menu__social-card"><a target="_blank" href="https://www.tiktok.com/" class="menu__social-link">TikTok</a></li>
+                                    </ul>
                             </div>
                         </div>
                     </li>
                 </ul>
             </div>
         
-
+            </div>
+        
+        <div class="header__main"> 
         <h1 class="header__title">
             explore <br>indonesia
         </h1>
 
-        <button type="button">Start travelling</button>
+        <button class="header__btn" type="button">Start travelling</button>
     
         <ul class="header__info-list">
             <li class="header__info-item">
@@ -156,18 +135,14 @@
             </li>
         </ul>
 
-        <video poster="#" class="header__video" src="https://cdn.pixabay.com/video/2019/04/26/23070-332665404_large.mp4" controls loop muted style="width: 417px; height: 254px;" ></video>
+        <video poster="#" class="header__video" src="https://cdn.pixabay.com/video/2019/04/26/23070-332665404_large.mp4" controls loop muted style="width: 315px; height: 190px;" ></video>
 
-            
+            </div>
     </div>
+
 </header>
 
+<script src="script.js"></script>
 
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-    crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
-    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
-    crossorigin="anonymous"></script>
 </body>
 </html>
