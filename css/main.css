@@ -4,7 +4,7 @@
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "DM Sans", sans-serif;
 }
 
 ul {
@@ -26,6 +26,12 @@ button {
   cursor: pointer;
 }
 
+img {
+  max-width: 100%;
+  display: block;
+  margin: 0;
+}
+
 .container {
   width: 314px;
   margin: 0 auto;
@@ -43,11 +49,13 @@ button {
     padding: 0 15px;
   }
 }
-header {
-  background-color: rgb(64, 64, 84);
+.header__list-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-.header__list-item {
+.header__menu-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -65,4 +73,10 @@ header {
 
 .header__nav-link {
   color: #FFFFFF;
+}
+
+.header__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }/*# sourceMappingURL=main.css.map */
