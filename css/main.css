@@ -55,9 +55,12 @@ img {
   padding-bottom: 40px;
 }
 
+.header__logo-wrap {
+  margin-top: -35px;
+}
+
 .header__logo {
   margin-right: 65px;
-  padding-top: 48px;
 }
 
 .header__wrap {
@@ -81,7 +84,6 @@ img {
 
 .header__item {
   padding-bottom: 45px;
-  padding-top: 48px;
 }
 
 .header__title {
@@ -238,7 +240,6 @@ img {
 
 .menu__button-open-icon,
 .menu__button-close-icon {
-  fill: turquoise;
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -247,8 +248,6 @@ img {
 
 .menu__button-open-icon:active,
 .menu__button-close-icon:active {
-  fill: indianred;
-  color: firebrick;
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -287,6 +286,7 @@ img {
 @media screen and (min-width: 1200px) {
   .header {
     padding-bottom: 0;
+    padding-top: 48px;
   }
   .header__nav-link {
     font-weight: 700;
@@ -295,7 +295,6 @@ img {
     color: #FFFFFF;
   }
   .header__nav-list {
-    padding-top: 48px;
     gap: 60px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -311,7 +310,7 @@ img {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding-top: 240px;
+    margin-top: 240px;
   }
   .header__video {
     margin-top: 26px;
@@ -319,10 +318,10 @@ img {
     height: 254px;
   }
   .header__main {
-    padding-left: 277px;
+    margin-left: 277px;
   }
   .header__item {
-    padding-bottom: 195px;
+    margin-bottom: 195px;
   }
   .menu__container {
     width: 25%;
