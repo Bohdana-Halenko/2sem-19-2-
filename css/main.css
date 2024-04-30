@@ -388,6 +388,15 @@ img {
   background-repeat: no-repeat;
 }
 
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .statistics {
+    background-image: url(/img/desktop/desktop-statistics-background-volcano-2x.png);
+  }
+}
+.catalogue {
+  margin-bottom: 1100px;
+}
+
 .catalogue__title {
   color: #010A20;
   font-weight: 700;
@@ -397,16 +406,15 @@ img {
   margin-bottom: 23px;
 }
 
-.catalogue__list {
-  margin-bottom: 728px;
-}
-
-.catalogue__item {
-  display: none;
-}
-
-.catalogue__item:nth-child(3) {
-  display: block;
+.catalogue__slider-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .catalogue__slides {
@@ -430,7 +438,6 @@ img {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding-top: 43px;
-  margin-top: 280px;
 }
 
 .numbers__title {
@@ -440,6 +447,16 @@ img {
   line-height: 115%;
   text-align: center;
   margin-bottom: 57px;
+}
+
+.numbers__subtitle {
+  color: #E0E0E0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.03em;
+  text-align: center;
+  margin-bottom: 60px;
 }
 
 .numbers__text {
@@ -466,7 +483,40 @@ img {
 }
 
 @media screen and (min-width: 1200px) {
-  .catalogue__item {
-    display: block;
+  .numbers__wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .numbers__subtitle {
+    width: 480px;
+  }
+  .numbers__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .numbers__text {
+    width: 340px;
+    text-align: center;
   }
 }/*# sourceMappingURL=main.css.map */
