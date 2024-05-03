@@ -28,6 +28,13 @@
     .articles__text{
         margin-bottom: 20px;
     }
+    @media  (min-device-pixel-ratio:2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx)
+{
+    .palm {background-image: url(../img/desktop/desktop-articles-palm-background-2x.webp);}
+    .road {background-image: url(../img/desktop/desktop-articles-mountain-background-2x.webp);}
+}
 }
 @media screen and (min-width:1200px){
 
@@ -41,6 +48,11 @@
     .articles__img{
         max-width: 630px;
     }
+    .articles_info{
+        padding-right: 124px;
+        padding-left: 130px;
+    }
+    
 }
 
 
@@ -90,3 +102,11 @@ border: none;
 .articles__text{
     margin-bottom: 40px;
 }
+@media  (min-device-pixel-ratio:2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx)
+{
+    .palm {background-image: url(../img/desktop/desktop-articles-palm-background-1x.webp);}
+    .road {background-image: url(../img/desktop/desktop-articles-mountain-background-1x.webp);}
+}
+
