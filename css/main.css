@@ -51,7 +51,9 @@ img {
   }
 }
 .header {
-  background-color: rgb(101, 101, 101);
+  background-image: url(./../../img/desktop/desktop-header-background-1x.png);
+  background-repeat: no-repeat;
+  background-size: cover;
   padding-bottom: 40px;
 }
 
