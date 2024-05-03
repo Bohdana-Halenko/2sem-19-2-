@@ -363,8 +363,6 @@ img {
   .articles__text {
     margin-bottom: 20px;
   }
-}
-@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .palm {
     background-image: url(../img/desktop/desktop-articles-palm-background-2x.webp);
   }
@@ -440,14 +438,14 @@ img {
   margin-bottom: 40px;
 }
 
-@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  .palm {
-    background-image: url(../img/desktop/desktop-articles-palm-background-1x.webp);
-  }
-  .road {
-    background-image: url(../img/desktop/desktop-articles-mountain-background-1x.webp);
-  }
+.palm {
+  background-image: url(../img/desktop/desktop-articles-palm-background-1x.webp);
 }
+
+.road {
+  background-image: url(../img/desktop/desktop-articles-mountain-background-1x.webp);
+}
+
 .section__title {
   font-family: var(--font-family);
   font-weight: 700;
