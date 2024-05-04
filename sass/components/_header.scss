@@ -6,9 +6,7 @@
     
 }
 
-.header__logo-wrap{
-    margin-top: -35px;
-}
+
 
 .header__logo{
     margin-right: 65px;
@@ -225,6 +223,13 @@ color: $header-list-text;
         padding-bottom: 0;
         padding-top: 48px;
     }
+
+    .header__logo{
+        margin-right: 65px;
+        width: 185px;
+        height: 68px;
+    }
+    
 
     .header__nav-link{
         font-weight: 700;
