@@ -18,8 +18,15 @@
         <div class=" container">
             <div class="header__wrap">   
                 <div class="header__nav">
-                    <a href="index.html">
-                    <img src="#" alt="logo" class="header__logo">
+                    <a class="header__logo-wrap" href="index.html">
+                                        
+                        <picture class="header__logo">
+                            <source
+                                srcset="./img/desktop/desktop-header-logo-1x.webp 1x, ./img/desktop/desktop-header-logo-2x.webp 2x" type="image/webp">
+                            <source
+                                srcset="./img/desktop/desktop-header-logo-1x.png 1x, ./img/desktop/desktop-header-logo-2x.png 2x" type="image/png">
+                            <img src="./img/desktop/desktop-header-logo-1x.png" alt="logo">
+                        </picture>
                     </a>
                     <nav>
                         <ul class="header__nav-list">
@@ -42,12 +49,16 @@
                     <ul class="header__menu-list">
                         <li class="header__menu-item">
                             <a class="header__menu-btn" href="#">
-                                adw
+                                <svg>
+                                    <use href="#"></use>
+                                </svg>
                             </a>
                         </li>
                         <li class="header__menu-item">
                             <button type="button" class="menu__button js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
-                                open
+                                <svg>
+                                    <use href="#"></use>
+                                </svg>
                             </button>                        
                             
                             <div class="menu__container js-menu-container" id="mobile-menu">
@@ -57,7 +68,7 @@
                             
                                 <div class="menu__box">
                                     <div class="mobile__menu">
-                                        <img class="menu__logo" src="#" alt="logo">
+                                        
     
                                         <ul class="menu__list">
                                             <li class="menu__item">
@@ -140,7 +151,7 @@
                 </li>
             </ul>
     
-            <video poster="#" class="header__video" src="https://cdn.pixabay.com/video/2019/04/26/23070-332665404_large.mp4" controls loop muted style="width: 315px; height: 190px;" ></video>
+            <video class="header__video" src="https://cdn.pixabay.com/video/2019/04/26/23070-332665404_large.mp4" controls loop muted style="width: 315px; height: 190px;" ></video>
     
             </div>
                 </div>
@@ -153,21 +164,29 @@
             <div class="container">
             <ul class="articles__list">
         
-                <li class="articles__item">
+                <li class="articles__item road">
+                <picture>
+                    <source srcset="./img/desktop/desktop-articles-route-1x.webp 1x, ./img/desktop/desktop-articles-route-2x.webp 2x " type="image/webp">
+                    <source srcset="./img/desktop/desktop-articles-route-1x.png 1x, ./img/desktop/desktop-articles-route-2x.png 2x " type="image/png">
                     <img src="./img/road.png" alt="road" class="articles__img">
-                    <div>
+                </picture>
+                    <div class="articles_info">
                     <h2 class="articles__title">The walkways of Indonesia spellbind</h2>
                     <p class="articles__text">Lorem ipsum dolor sit amet, consectetur adip iscing elit. Fusce commodo magna et libero mollis rhoncus. </p>
                     <button class="articles__button">Learn More</button>
                 </div>
                 </li>
-                <li class="articles__item">
+                <li class="articles__item palm">
 
-                    <div> <h2 class="articles__title">Perfect beaches exude relaxation and fun</h2>
+                    <div class="articles_info"> <h2 class="articles__title">Perfect beaches exude relaxation and fun</h2>
                     <p class="articles__text">Lorem ipsum dolor sit amet, consectetur adip iscing elit. Fusce commodo magna et libero mollis rhoncus. </p>
                     <button class="articles__button">Learn More</button>
                 </div>
+                <picture>
+                    <source srcset="./img/desktop/desktop-articles-palm-1x.webp 1x, ./img/desktop/desktop-articles-palm-2x.webp 2x" type="image/webp">
+                    <source srcset="./img/desktop/desktop-articles-palm-1x.png 1x, ./img/desktop/desktop-articles-palm-2x.png 2x" type="image/png">
                     <img src="./img/palm.png" alt="palm" class="articles__img">
+                </picture>
                 </li>
             
             </ul>
@@ -257,26 +276,50 @@
             <div class="container">
                 <h2 class="section__title">Photo Gallery</h2>
                 <p class="activity__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>Phasellus dapibus mauris in lectus tempus, eget tincidunt</p>
-                <ul class="activity__list">
-                    <li class="activity__item">
-                        <img class="activity__img" src="" alt="img1">
-                    </li>
-                    <li class="activity__item">
-                        <img class="activity__img" src="" alt="img2">
-                    </li>
-                    <li class="activity__item">
-                        <img class="activity__img" src="" alt="img3">
-                    </li>
-                    <li class="activity__item">
-                        <img class="activity__img" src="" alt="img4">
-                    </li>
-                    <li class="activity__item">
-                        <img class="activity__img" src="" alt="img5">
-                    </li>
-                    <li class="activity__item">
-                        <img class="activity__img" src="" alt="img6">
-                    </li>
-                </ul>
+                <div class="activity__list">
+                    <div class="activity__item">
+                        <picture class="activity__img">
+                            <source srcset="./img/desktop/desktop-gallery-img-one-1x.png, ./img/desktop/desktop-gallery-img-one-2x.png">
+                            <source script="./img/desktop/desktop-gallery-img-one-1x.webp, .img/desktop/desktop-gallery-img-one-2x.webp">
+                            <img src="./img/desktop/desktop-gallery-img-one-1x.png" alt="gallery1">
+                        </picture>
+                    </div>
+                    <div class="activity__item">
+                        <picture class="activity__img">
+                            <source srcset="./img/desktop/desktop-gallery-img-two-1x.png, ./img/desktop/desktop-gallery-img-two-2x.png">
+                            <source script="./img/desktop/desktop-gallery-img-two-1x.webp, .img/desktop/desktop-gallery-img-two-2x.webp">
+                            <img src="./img/desktop/desktop-gallery-img-two-1x.png" alt="gallery1">
+                        </picture>
+                    </div>
+                    <div class="activity__item">
+                        <picture class="activity__img">
+                            <source srcset="./img/desktop/desktop-gallery-img-three-1x.png, ./img/desktop/desktop-gallery-img-three-2x.png">
+                            <source script="./img/desktop/desktop-gallery-img-three-1x.webp, .img/desktop/desktop-gallery-img-three-2x.webp">
+                            <img src="./img/desktop/desktop-gallery-img-three-1x.png" alt="gallery1">
+                        </picture>
+                    </div>
+                    <div class="activity__item">
+                        <picture class="activity__img">
+                            <source srcset="./img/desktop/desktop-gallery-img-four-1x.png, ./img/desktop/desktop-gallery-img-four-2x.png">
+                            <source script="./img/desktop/desktop-gallery-img-four-1x.webp, .img/desktop/desktop-gallery-img-four-2x.webp">
+                            <img src="./img/desktop/desktop-gallery-img-four-1x.png" alt="gallery1">
+                        </picture>
+                    </div>
+                    <div class="activity__item">
+                        <picture class="activity__img">
+                            <source srcset="./img/desktop/desktop-gallery-img-five-1x.png, ./img/desktop/desktop-gallery-img-five-2x.png">
+                            <source script="./img/desktop/desktop-gallery-img-five-1x.webp, .img/desktop/desktop-gallery-img-five-2x.webp">
+                            <img src="./img/desktop/desktop-gallery-img-five-1x.png" alt="gallery1">
+                        </picture>
+                    </div>
+                    <div class="activity__item">
+                        <picture class="activity__img">
+                            <source srcset="./img/desktop/desktop-gallery-img-six-1x.png, ./img/desktop/desktop-gallery-img-six-2x.png">
+                            <source script="./img/desktop/desktop-gallery-img-six-1x.webp, .img/desktop/desktop-gallery-img-six-2x.webp">
+                            <img src="./img/desktop/desktop-gallery-img-six-1x.png" alt="gallery1">
+                        </picture>
+                    </div>
+                </div>
             </div>
         </section>
         <!-- Artem H section -->
@@ -292,12 +335,73 @@
 
 
     </main>
+    <footer class="footer">
+        <div class="container footer-wrap">
+            <button class="scroll-button" link="#top">
+                <svg class="scroll-button-svg">
+                    <use href="./img/symbol-defs.svg#icon-fixed-button"></use>
+                </svg>
+            </button>
+            <div class="footer__logo-list-wrap">
+                <a href="footer__logo-link">
+                    <picture class="footer__logo">
+                        <source srcset="./img/desktop/desktop-footer-logo-1x.png 1x, ./img/desktop/desktop-footer-logo-2x.png 2x" type="image/png">
+                        <source srcset="./img/desktop/desktop-footer-logo-1x.webp 1x, ./img/desktop/desktop-footer-logo-2x.webp 2x" type="image/webp">
+                        <img src="./img/desktop/desktop-footer-logo-1x.png" alt="logo">
+                    </picture>
+                </a>
+                <ul class="footer__list">
+                    <li class="footer__list-item">
+                        <a href="#" class="footer__list-link">About</a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a href="#" class="footer__list-link">Pricing</a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a href="#" class="footer__list-link">Company</a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a href="#" class="footer__list-link">Blog</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__social-copyright-wrap">
+                <ul class="footer__socials-list">
+                    <li class="footer__socials-item">
+                        <svg class="footer__socials-icon">
+                            <use href="./img/symbol-defs.svg#icon-facebook"></use>
+                        </svg>
+                    </li>
+                    <li class="footer__socials-item">
+                        <svg class="footer__socials-icon">
+                            <use href="./img/symbol-defs.svg#icon-linkedin"></use>
+                        </svg>
+                    </li>
+                    <li class="footer__socials-item">
+                        <svg class="footer__socials-icon">
+                            <use href="./img/symbol-defs.svg#icon-google"></use>
+                        </svg>
+                    </li>
+                </ul>
+                <p class="footer__copyright">Copyright © 2019</p>
+            </div>
+        </div>
+    </footer>
     <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
     integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
     crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
     integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
     crossorigin="anonymous"></script>
+    <script>
+        const btn = document.querySelector(".scroll-button");
+        btn.addEventListener("click", () =>{
+            document.documentElement.scrollTo({
+                top: 0,
+                behavior: "smooth",
+            });
+        });
+    </script>
 </body>
 </html>
