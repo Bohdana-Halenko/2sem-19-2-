@@ -257,8 +257,38 @@ color: $header-list-text;
         font-weight: 700;
         font-size: 18px;
         text-transform: uppercase;
-        color: $title-light;
-    }    
+        color: $title-light;        
+        position: relative;
+
+        &:hover{
+            animation-name: changecolor;
+            animation-duration: 3s;            
+            animation-fill-mode: forwards;            
+        }
+    } 
+    
+    
+    
+    @keyframes changecolor {
+        0%{
+            color: $title-light;
+            bottom: 0;
+
+        }
+
+        50%{
+            color: $contrast-color;
+            bottom: 20px;
+        }
+
+        100%{
+            color: $title-light;
+            bottom: 0;
+            
+
+        }
+        
+    }
 
     .header__nav-list{
     
