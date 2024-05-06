@@ -29,7 +29,13 @@
     flex-wrap: nowrap;
     align-items: center;
 }
-
+.carousel-wrap{
+    display: flex;
+    justify-content: center;
+}
+.carousel-dark{
+    width: 314px;
+}
 .catalogue__slides{
     width: 405px;
     height: 257px;
