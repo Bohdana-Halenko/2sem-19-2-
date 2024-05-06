@@ -428,12 +428,6 @@ img {
   .articles__text {
     margin-bottom: 20px;
   }
-  .palm {
-    background-image: url(../img/desktop/desktop-articles-palm-background-2x.webp);
-  }
-  .road {
-    background-image: url(../img/desktop/desktop-articles-mountain-background-2x.webp);
-  }
 }
 @media screen and (min-width: 1200px) {
   .articles__item {
@@ -501,14 +495,6 @@ img {
 
 .articles__text {
   margin-bottom: 40px;
-}
-
-.palm {
-  background-image: url(../img/desktop/desktop-articles-palm-background-1x.webp);
-}
-
-.road {
-  background-image: url(../img/desktop/desktop-articles-mountain-background-1x.webp);
 }
 
 .statistics {
